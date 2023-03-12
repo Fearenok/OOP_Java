@@ -6,8 +6,18 @@ package HW1.MagClass;
 
 public class Monk extends MagClass {
 
-   public Monk() {
-      super("Монах", 110, 110, 10, 125, 9);
+   public Monk(String name) {
+      super(name, 110, 110, 10, 125, 9);
+   }
+
+   @Override
+   public void step() {
+      System.out.println("Удар волшебным посохом!");
+   }
+
+   @Override
+   public String getInfo() {
+      return "Monk";
    }
 
 }

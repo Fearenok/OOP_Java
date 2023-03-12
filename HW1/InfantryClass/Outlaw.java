@@ -6,8 +6,18 @@ package HW1.InfantryClass;
 
 public class Outlaw extends InfantryClass {
 
-   public Outlaw() {
-      super("Разбойник", 120, 120, 16, 100, 9);
+   public Outlaw(String name) {
+      super(name, 120, 120, 16, 100, 9);
+   }
+
+   @Override
+   public void step() {
+      System.out.println("Разбойник атакует!");
+   }
+
+   @Override
+   public String getInfo() {
+      return "Outlaw";
    }
 
 }

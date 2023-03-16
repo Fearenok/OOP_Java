@@ -14,5 +14,4 @@ public class Crossbowman extends ShooterClass {
    public String getInfo() {
       return "Crossbowman";
    }
-
 }

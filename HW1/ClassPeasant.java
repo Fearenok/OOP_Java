@@ -24,6 +24,4 @@ public class ClassPeasant extends BaseHero {
     public String getInfo() {
         return "Paesant";
     }
-  
-
 }

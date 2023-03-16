@@ -12,5 +12,4 @@ public class Positions {
    private double distance(int newX, int newY) {
       return Math.sqrt(Math.pow(this.x - newX, 2) + Math.pow(this.y - newY, 2));
    };
-
 }

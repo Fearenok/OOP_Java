@@ -84,5 +84,4 @@ public abstract class BaseHero implements Interface {
     // public int getProtection() {
     // return protection;
     // }
-
 }

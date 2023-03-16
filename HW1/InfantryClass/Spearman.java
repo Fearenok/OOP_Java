@@ -14,5 +14,4 @@ public class Spearman extends InfantryClass {
    public String getInfo() {
       return "Spearman";
    }
-
 }

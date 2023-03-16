@@ -80,5 +80,4 @@ public class Programm {
     private static String getName() {
         return Names.values()[new Random().nextInt(Names.values().length)].toString();
     }
-
 }

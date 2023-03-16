@@ -14,5 +14,4 @@ public class Snipper extends ShooterClass {
    public String getInfo() {
       return "Snipper";
    }
-
 }

@@ -14,5 +14,4 @@ public class Magician extends MagClass {
    public String getInfo() {
       return "Magician";
    }
-
 }

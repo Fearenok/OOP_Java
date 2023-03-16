@@ -14,5 +14,4 @@ public class Outlaw extends InfantryClass {
    public String getInfo() {
       return "Outlaw";
    }
-
 }

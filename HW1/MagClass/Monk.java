@@ -14,5 +14,4 @@ public class Monk extends MagClass {
    public String getInfo() {
       return "Monk";
    }
-
 }

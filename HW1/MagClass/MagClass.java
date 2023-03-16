@@ -15,5 +15,4 @@ public abstract class MagClass extends BaseHero {
       this.mana = mana;
 
    }
-
 }

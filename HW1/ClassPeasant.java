@@ -10,9 +10,9 @@ public class ClassPeasant extends BaseHero {
 
     public int energy = 6;
 
-    public ClassPeasant(String name) {
-        super(name, 1,1,3,1,1,0,0);
-        
+    public ClassPeasant(String name, int x, int y) {
+        super(name, 1, 3, 1, 1, x, y);
+
     }
 
     @Override

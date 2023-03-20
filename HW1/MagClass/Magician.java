@@ -6,12 +6,12 @@ package HW1.MagClass;
 
 public class Magician extends MagClass {
 
-   public Magician(String name) {
-      super(name, 30, 30, 9, 1, -5, 12);
+   public Magician(String name, int x, int y) {
+      super(name, 30, 9, 1, -5, 12, x, y);
    }
 
    @Override
-   public String getInfo() {
+   public String getName() {
       return "Magician";
    }
 }

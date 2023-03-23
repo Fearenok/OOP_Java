@@ -2,16 +2,13 @@ package HW1;
 
 import HW1.InfantryClass.Outlaw;
 import HW1.InfantryClass.Spearman;
-//import HW1.InfantryClass.*;
 import HW1.MagClass.*;
-//import HW1.ShooterClass.*;
 import HW1.ShooterClass.Crossbowman;
 import HW1.ShooterClass.Snipper;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
-//import HW1.Interface;
 import java.util.Scanner;
 
 public class Programm {
@@ -38,27 +35,27 @@ public class Programm {
         for (int i = 1; i < GANG_SIZE + 1; i++) {
             switch (new Random().nextInt(4)) {
                 case 0:
-                    darkSide.add(new ClassPeasant(BaseHero.generateName(), 10, i));
+                    whiteSide.add(new ClassPeasant(BaseHero.generateName(), 10, i));
                     break;
                 case 1:
-                    darkSide.add(new Snipper(BaseHero.generateName(), 10, i));
+                    whiteSide.add(new Spearman(BaseHero.generateName(), 10, i));
+                    break;
+                case 2:
+                    whiteSide.add(new Monk(BaseHero.generateName(), 10, i));
                     break;
                 default:
-                    darkSide.add(new Outlaw(BaseHero.generateName(), 10, i));
+                    whiteSide.add(new Crossbowman(BaseHero.generateName(), 10, i));
                     break;
             }
             switch (new Random().nextInt(4)) {
                 case 0:
-                    whiteSide.add(new ClassPeasant(BaseHero.generateName(), 1, i));
+                    darkSide.add(new ClassPeasant(BaseHero.generateName(), 1, i));
                     break;
                 case 1:
-                    whiteSide.add(new Spearman(BaseHero.generateName(), 1, i));
-                    break;
-                case 2:
-                    whiteSide.add(new Monk(BaseHero.generateName(), 1, i));
+                    darkSide.add(new Snipper(BaseHero.generateName(), 1, i));
                     break;
                 default:
-                    whiteSide.add(new Crossbowman(BaseHero.generateName(), 1, i));
+                    darkSide.add(new Outlaw(BaseHero.generateName(), 1, i));
                     break;
             }
         }
@@ -86,5 +83,7 @@ public class Programm {
             } else
                 unit.step(darkSide, whiteSide);
         }
+
     }
+
 }

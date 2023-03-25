@@ -22,6 +22,6 @@ public class ClassPeasant extends BaseHero {
 
     @Override
     public String getName() {
-        return "Paesant";
+        return "Крестьянин";
     }
 }
